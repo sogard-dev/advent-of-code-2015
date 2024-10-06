@@ -8,11 +8,15 @@ import (
 )
 
 func TestPart1(t *testing.T) {
-	require.Equal(t, 0, part1(""))
-	require.Equal(t, 0, part1(utils.GetInput(t, "input.txt")))
+	require.Equal(t, 605, part1(`London to Dublin = 464
+London to Belfast = 518
+Dublin to Belfast = 141`))
+	require.Equal(t, 141, part1(utils.GetInput(t, "input.txt")))
 }
 
 func TestPart2(t *testing.T) {
-	require.Equal(t, 0, part2(""))
-	require.Equal(t, 0, part2(utils.GetInput(t, "input.txt")))
+	require.Equal(t, 982, part2(`London to Dublin = 464
+London to Belfast = 518
+Dublin to Belfast = 141`))
+	require.Equal(t, 736, part2(utils.GetInput(t, "input.txt")))
 }
