@@ -49,3 +49,13 @@ func GetPerm[T interface{}](orig []T, p []int) []T {
 	}
 	return result
 }
+
+func SetBit(n int, pos int) int {
+	n |= (1 << pos)
+	return n
+}
+
+func HasBit(n int, pos int) bool {
+	val := n & (1 << pos)
+	return (val > 0)
+}
