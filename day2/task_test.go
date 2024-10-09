@@ -16,5 +16,5 @@ func TestPart1(t *testing.T) {
 func TestPart2(t *testing.T) {
 	require.Equal(t, 34, part2("2x3x4"))
 	require.Equal(t, 14, part2("1x1x10"))
-	require.Equal(t, 0, part2(utils.GetInput(t, "input.txt")))
+	require.Equal(t, 3737498, part2(utils.GetInput(t, "input.txt")))
 }

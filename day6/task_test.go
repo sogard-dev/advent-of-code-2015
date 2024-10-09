@@ -17,5 +17,5 @@ func TestPart1(t *testing.T) {
 func TestPart2(t *testing.T) {
 	require.Equal(t, 1, part2("turn on 0,0 through 0,0"))
 	require.Equal(t, 2000000, part2("toggle 0,0 through 999,999"))
-	require.Equal(t, 0, part2(utils.GetInput(t, "input.txt")))
+	require.Equal(t, 15343601, part2(utils.GetInput(t, "input.txt")))
 }
