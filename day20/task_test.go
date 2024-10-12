@@ -3,16 +3,14 @@ package day20
 import (
 	"testing"
 
-	"github.com/sogard-dev/advent-of-code-2015/utils"
 	"github.com/stretchr/testify/require"
 )
 
 func TestPart1(t *testing.T) {
-	require.Equal(t, 0, part1(``))
-	require.Equal(t, 0, part1(utils.GetInput(t, "input.txt")))
+	require.Equal(t, 8, part1(150))
+	require.Equal(t, 786240, part1(34000000))
 }
 
 func TestPart2(t *testing.T) {
-	require.Equal(t, 0, part2(``))
-	require.Equal(t, 0, part2(utils.GetInput(t, "input.txt")))
+	require.Equal(t, 831600, part2(34000000))
 }
