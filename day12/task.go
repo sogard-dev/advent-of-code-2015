@@ -7,7 +7,7 @@ import (
 )
 
 type Foo struct {
-	X map[string]interface{} `json:"-"` // Rest of the fields should go here.
+	X map[string]interface{} `json:"-"`
 }
 
 func part1(input string) int {

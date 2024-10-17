@@ -22,5 +22,5 @@ func TestPart1(t *testing.T) {
 }
 
 func TestPart2(t *testing.T) {
-	require.Equal(t, 0, int(part2(utils.GetInput(t, "input.txt"))))
+	require.Equal(t, 80393059, int(part2(utils.GetInput(t, "input.txt"))))
 }

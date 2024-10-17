@@ -95,10 +95,8 @@ func createNode(line string) (node, string) {
 	lspl := strings.Split(lside, " ")
 
 	if len(lspl) == 1 {
-		// 123 -> x
 		return signal{lspl[0]}, outputWire
 	} else if len(lspl) == 2 {
-		// NOT lk -> ll
 		operator := lspl[0]
 		wire := lspl[1]
 		if operator == "NOT" {
@@ -110,10 +108,6 @@ func createNode(line string) (node, string) {
 		operator := lspl[1]
 		arg1 := lspl[0]
 		arg2 := lspl[2]
-
-		// gk OR gq -> gr
-		// ff AND fh -> fi
-		// kf LSHIFT 15 -> kj
 
 		switch operator {
 		case "OR":
